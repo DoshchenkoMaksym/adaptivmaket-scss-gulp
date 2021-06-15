@@ -215,7 +215,7 @@ $red: #ff3f40;
         text-align: center;
         width: 505px;
         
-        margin-bottom: 88px;
+        margin-bottom: 78px;
     }
     &__title-title{
         margin-bottom: 20px;
@@ -224,16 +224,19 @@ $red: #ff3f40;
         height: 50px;
         width: 100%;
         position: relative;
+        
     }
     &__nav-button{
         display: none;
     }
     &__nav-list{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         
     }
     &__nav-btn{
+       
+        padding: 10px 20px;
         border: none;
         background-color: transparent;
         opacity: 0.7;
@@ -257,14 +260,12 @@ $red: #ff3f40;
     &__img-block{
         width: 299px;
         height: 291px;
-        background-image: url("/images/how-to-front-end-840.jpg");
-        background-size: cover;
-        background-position: center;
         margin-top: 19px;
         img {
+            object-fit: cover;
             width: 100%;
         height: 100%;
-        opacity: 0;
+        
         }
     }
 }
@@ -278,7 +279,7 @@ $red: #ff3f40;
         flex-direction: column;
         justify-content: space-between;
         height: 185px;
-        width: 460px;
+        max-width: 460px;
     }
     &__title-text{
         opacity: 0.7;
@@ -289,10 +290,8 @@ $red: #ff3f40;
         justify-content: space-between;
     }
     &__descr{
-        width: 850px;
-        height: 445px;
+        width: 100%;
         display: flex;
-        justify-content: flex-end;
         flex-direction: column;
         align-self: flex-end;
     }
@@ -307,13 +306,18 @@ $red: #ff3f40;
     }
     &__descr-text{
         opacity: 0.7;
-        width: 632px;
+        max-width: 632px;
         line-height: 28px;
        margin-bottom: 40px;
     }
-    &__descr-item{
-        margin-right:29px;
+    &__descr-list{
+        display: flex;
+        margin-bottom: 45px;
+        max-width: 375px;
+        justify-content: space-between;
+        
     }
+   
     &__descr-link{
         opacity: 0.8;
         font-size: 18px;
@@ -323,59 +327,38 @@ $red: #ff3f40;
         font-style: italic;
     }
     &__person{
-        width: 321px;
+        max-width: 321px;
         height: 458px;
-        background-image: url("/images/person.jpg");
-        background-size: cover;
-        background-position: center;
+        margin-right: 74px;
         img {
             width: 100%;
-        height: 100%;
-        opacity: 0;
+            height: 100%;
+            object-fit: cover;
         }
     }
-    &__descr-list{
-        display: flex;
-        margin-bottom: 55px;
-    }
+    
     &__photos{
         display: flex;
        justify-content: space-between;
+       width: 100%;
     }
     &__photos-img{
         width: 197px;
         height: 214px;
         position: relative;
         overflow: hidden;
-       
+        margin-top: 10px;
         &:hover .team__photos-name{
             bottom:0px;
             transition-duration: .5s;
         }
         img {
+            object-fit: cover;
             width: 100%;
         height: 100%;
-        opacity: 0;
+        
         }
-       &--addstatham{
-        background-image: url("/images/statham.jpg");
-        background-size: cover;
-       }
-       &--addarnold{
-        background-image: url("/images/arnold.jpeg");
-        background-size: cover;
-        background-position: center;
-       }
-       &--addberntal{
-        background-image: url("/images/berntal.jpg");
-        background-size: cover;
-        background-position: center;
-       }
-       &--addchan{
-        background-image: url("/images/chan.jpg");
-        background-size: cover;
-        background-position: center;
-       }
+       
     }
     &__photos-name{
         display: flex;
@@ -398,27 +381,31 @@ $red: #ff3f40;
     }
 }
 .subscription {
+    background-color: #f5f0dd;
     &__inner{
-        padding:140px 0 140px 0;
-        background-color: #f5f0dd;
+        padding:140px 0 124px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
     &__title{
         margin-bottom: 31px;
         opacity: 0.8;
         font-size: 42px;
-        line-height: 24px;
+        line-height: 40px;
         font-weight: 700;
         letter-spacing: 0.025em;
         color: #ffffff;
     }
     &__text{
-        margin-bottom: 62px;
+        margin-bottom: 42px;
         line-height: 28px;
         color: #ffffff;
         opacity: 0.8;
+    }
+    &__form{
+        max-width: 765px;
     }
     &__form-input{
         padding: 33px 0 33px 36px;
@@ -430,6 +417,7 @@ $red: #ff3f40;
         margin-right: 20px;
     }
     &__form-btn{
+        margin-top: 20px;
         width: 214px;
         height: 79px;
         background-color: $red;
@@ -441,13 +429,13 @@ $red: #ff3f40;
         letter-spacing: 0.025em;
         color: #ffffff;
         border-radius: 5px;
-        cursor: pointer
+        cursor: pointer;
+        
     }
 }
 .connection {
     padding: 100px 0 110px 0;
-    display: flex;
-    justify-content: flex-end;
+   
     &__inner{
         width: 100%;
     }
@@ -456,18 +444,27 @@ $red: #ff3f40;
         flex-direction: column;
         justify-content: space-between;
         height: 215px;
-        width: 720px;
-        
+    }
+    &__text{
+        max-width: 720px;
     }
     &__info{
+        width: 100%;
         margin-top: 75px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
-   
+    
+    &__forms{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 732px;;
+    }
     &__forms-input{
         padding-left: 48px;
-        width: 339px;
+        width: 45%;
         height: 69px;
         background-color: #e6e6e6;
         color: $mainfont;
@@ -479,13 +476,10 @@ $red: #ff3f40;
             color: #000000;
             opacity: 0.7;
         }
-        &:first-child{
-            margin-right: 52px;
-        }
     }
     &__forms-text{
         margin: 46px 0 43px 0;
-        width: 731px;
+        width: 100%;
         height: 249px;
         background-color: #e6e6e6;
         border:none;
@@ -501,7 +495,7 @@ $red: #ff3f40;
     }
     
     &__forms-btn{
-        width: 731px;
+        width: 100%;
         height: 72px;
         background-color: #ff3b3b;
         border-radius: 5px;
@@ -516,11 +510,10 @@ $red: #ff3f40;
     }
     &__contacts{
         padding: 145px 0 0 79px;
-        width: 575px;
+        
         height: 481px;
         background-color: #2d2d2d;
-        position: absolute;
-        right:0;   
+        
     }
     &__contacts-title{
         margin-bottom: 41px;
