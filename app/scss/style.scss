@@ -95,6 +95,10 @@ $red: #ff3f40;
     }
     &__about{
         max-width: 595px;
+        height: 345px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     &__about-title{
         font-size: 60px;
@@ -103,10 +107,9 @@ $red: #ff3f40;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         
+        
     }
     &__about-text{
-        margin-top: 20px;
-        margin-bottom: 58px;
         opacity: 0.7;
         line-height: 28px;
         max-width: 515px; 
@@ -138,9 +141,10 @@ $red: #ff3f40;
         margin-bottom: 108px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__about{
-        width: 520px;
+        max-width: 520px;
     }
     &__about-title{
         margin-bottom: 45px;
@@ -210,12 +214,19 @@ $red: #ff3f40;
         align-items: center;
         text-align: center;
         width: 505px;
-        height: 145px;
+        
+        margin-bottom: 88px;
+    }
+    &__title-title{
+        margin-bottom: 20px;
     }
     &__nav{
-        margin-top: 88px;
-        margin-bottom: 45px;
+        height: 50px;
         width: 100%;
+        position: relative;
+    }
+    &__nav-button{
+        display: none;
     }
     &__nav-list{
         display: flex;
@@ -237,6 +248,7 @@ $red: #ff3f40;
         }
     }
     &__img{
+        margin-top: 45px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -444,19 +456,15 @@ $red: #ff3f40;
         flex-direction: column;
         justify-content: space-between;
         height: 215px;
-        
-    }
-    &__text{
         width: 720px;
+        
     }
     &__info{
         margin-top: 75px;
         display: flex;
         justify-content: space-between;
     }
-    &__forms{
-        width: 735px;
-    }
+   
     &__forms-input{
         padding-left: 48px;
         width: 339px;
@@ -477,7 +485,7 @@ $red: #ff3f40;
     }
     &__forms-text{
         margin: 46px 0 43px 0;
-        width: 100%;
+        width: 731px;
         height: 249px;
         background-color: #e6e6e6;
         border:none;
@@ -493,7 +501,7 @@ $red: #ff3f40;
     }
     
     &__forms-btn{
-        width: 100%;
+        width: 731px;
         height: 72px;
         background-color: #ff3b3b;
         border-radius: 5px;
@@ -508,11 +516,11 @@ $red: #ff3f40;
     }
     &__contacts{
         padding: 145px 0 0 79px;
-        width: 380px;
+        width: 575px;
         height: 481px;
         background-color: #2d2d2d;
-        /* position: absolute;
-        right:0;    */
+        position: absolute;
+        right:0;   
     }
     &__contacts-title{
         margin-bottom: 41px;

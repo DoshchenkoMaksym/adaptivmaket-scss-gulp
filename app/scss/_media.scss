@@ -1,3 +1,8 @@
+@media (max-width: 1242px){
+    .products__img{
+        justify-content: space-evenly;
+    }
+}
 @media (max-width: 1200px){
     .top__about{
     max-width:495px;
@@ -5,6 +10,9 @@
 .top__about-title{
     font-size: 50px;
     
+}
+.services__about {
+    max-width: 449px;
 }
 }
 @media (max-width: 1120px) {
@@ -23,6 +31,24 @@
         margin-top: 20px;
         padding-top: 20px;
         max-width:495px;
+        align-items: center;
+        text-align: center;
+    }
+    .services__inner{
+        margin-top: 55px;
+        margin-bottom: 65px;
+        justify-content: center;
+    }
+    .services__about{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .services__ourservices{
+        max-width: 875px;
+        margin-top: 50px;
+        justify-content: space-evenly;
     }
 }
 @media (max-width: 1040px){
@@ -36,52 +62,7 @@
         height:507px;
     }
 }
-@media (max-width: 880px) {
-    .top__about-video {
-        height:467px;
-    }
-    
-}
-@media (max-width: 800px) {
-    .top__about-video {
-        height:427px;
-    }
-}
-@media (max-width: 720px) {
-    .top__about-video {
-        height:387px;
-    }
-}
-@media (max-width: 660px) {
-    .top__about-video {
-        height:347px;
-    }
-}
-@media (max-width: 580px) {
-    .top__about-video {
-        height:307px;
-    }
-    .top__about{
-        max-width:100%;
-    }
-    .copyright{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .copyright-text{
-        text-align: center;
-    }
-}
-@media (max-width: 540px) {
-    .top__inner{
-        padding-bottom: 55px;
-    }
-    .top__about-video {
-        height:287px;
-    }
-    .top__about-title {
-        font-size: 40px;
-    }
+@media (max-width: 940px) {
     .menu{
         width: 100%;
         position: relative;
@@ -126,6 +107,96 @@
     .menu__list--open{
         transform: translateY(89px);
     }
+    .products__nav{
+        background-color: $mainfont;
+        opacity: 0.8;
+        display: flex;
+        align-items: center;
+        padding-left: 22px;
+    }
+    .products__nav-list{
+        display: none;
+    }
+    .products__nav-button {
+    
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .products__nav-button span{
+    background-color: white;
+    width: 37px;
+    height: 3px;
+    display: block;
+    border-radius: 4px;
+     
+}
+.products__nav-button span:not(:first-child){
+    margin: 6px 0 0 0;
+}
+}
+@media (max-width: 880px) {
+    .top__about-video {
+        height:467px;
+    }
+    
+}
+@media (max-width: 800px) {
+    .top__about-video {
+        height:427px;
+    }
+}
+@media (max-width: 720px) {
+    .top__about-video {
+        height:387px;
+    }
+}
+@media (max-width: 660px) {
+    .top__about-video {
+        height:347px;
+    }
+    .services__ourservices-block {
+        max-width: 267px;
+    }
+}
+@media (max-width: 580px) {
+    .top__about-video {
+        height:307px;
+    }
+    .top__about{
+        max-width:100%;
+    }
+    .copyright{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .copyright-text{
+        text-align: center;
+    }
+    .services__ourservices {
+        justify-content: center;
+        max-width: 449px;
+        :nth-child(2){
+            margin-top: 49px;
+        }
+    }
+    .services__ourservices-block{
+        max-width: 100%;
+       
+    }
+}
+@media (max-width: 540px) {
+    .top__inner{
+        padding-bottom: 55px;
+    }
+    .top__about-video {
+        height:287px;
+    }
+    .top__about-title {
+        font-size: 40px;
+    }
+    
     .menu__list-item{
         display: block;
       width: 100%;
@@ -136,6 +207,12 @@
     .menu__list-link{
         font-size: 24px;
     }
+    .services__about-title{
+        font-size: 32px;
+    }
+    .products__title{
+        width: 100%;
+    }
 }
 @media (max-width: 500px){
     .top__about-video {
@@ -143,6 +220,11 @@
     }
     .top__about{
         padding-top:0;
+    }
+}
+@media (max-width:472px) {
+    .products__title-title{
+        font-size: 32px;
     }
 }
 @media (max-width: 430px){
@@ -154,6 +236,9 @@
         font-size: 32px;
         line-height: 53px;
     }
+    .services__about-title{
+        font-size: 28px;
+    }
 }
 @media (max-width: 350px){
     
@@ -163,6 +248,9 @@
     .top__about-title {
         font-size: 28px;
         line-height: 53px;
+    }
+    .products__img-block{
+        width: 100%;
     }
 }
 @media (max-width: 300px) {
